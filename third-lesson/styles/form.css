@@ -1,0 +1,135 @@
+.contacts {
+  position: relative;
+  margin-top: 20px;
+}
+
+.contacts::after {
+  background-image: url(../assets/images/constactsbg.jpg);
+  opacity: 0.5;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.contacts__wrapper {
+  text-align: center;
+  padding: 30px;
+}
+
+.contacts fieldset {
+  border: 1px solid green;
+  padding: 20px;
+}
+
+.form {
+  background-color: rgba(138, 123, 123, 0.5);
+  text-align: justify;
+  border-radius: 10px;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 10;
+}
+
+.form-field,
+.form-radio {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-field span {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.form-field span::after {
+  content: "\002A";
+  color: #eb0909;
+}
+
+.form-radio {
+  cursor: pointer;
+}
+
+.form-radio span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.input-form {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+.input-form:required:invalid:not(:placeholder-shown) {
+  border: 1px dashed red;
+}
+
+.form-buttons {
+  margin-top: 30px;
+  display: table;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-buttons__reset,
+.form-buttons__submit {
+  display: table-cell;
+  width: 50%;
+}
+
+.form-buttons__reset {
+  text-align: start;
+}
+
+.form-buttons__reset .input-btn {
+  background-color: rgb(75, 72, 72);
+}
+
+.form-buttons__submit .input-btn {
+  background-color: rgb(186, 69, 5);
+}
+
+.form-buttons__submit {
+  text-align: end;
+}
+
+.input-btn {
+  padding: 15px 30px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+
+.input-btn:hover {
+  border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .form-buttons__reset,
+  .form-buttons__submit {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form-buttons__reset {
+    margin-bottom: 10px;
+  }
+
+  .input-btn {
+    width: 100%;
+  }
+}

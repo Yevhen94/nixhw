@@ -1,0 +1,107 @@
+.questions {
+  background-color: rgb(226, 214, 214);
+}
+
+.questions__wrapper {
+  padding: 30px 20px;
+}
+
+.question-title {
+  background-color: violet;
+  position: relative;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.labels-block label:nth-child(1) .question-title {
+  background-color: rgb(56, 56, 224);
+  border-radius: 20px 20px 0 0;
+}
+
+.labels-block label:nth-child(5) .question-title {
+  border-radius: 0 0 20px 20px;
+}
+
+.labels-block label:nth-child(2) .question-title {
+  background-color: rgb(95, 224, 56);
+}
+
+.labels-block label:nth-child(3) .question-title {
+  background-color: rgb(224, 190, 56);
+}
+
+.labels-block label:nth-child(4) .question-title {
+  background-color: rgb(224, 56, 154);
+}
+
+.labels-block label:nth-child(5) .question-title {
+  background-color: rgb(182, 32, 32);
+}
+
+.arrow {
+  transform: translate(0, -50%) rotate(-90deg);
+  transition: transform 0.5s ease;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 20px;
+  top: 50%;
+}
+
+.arrow::after {
+  transform: translate(-50%, -55%);
+  position: absolute;
+  content: "\276E";
+  left: 50%;
+  top: 50%;
+}
+
+.answer-list {
+  overflow: hidden;
+  font-size: 20px;
+  max-height: 0;
+  opacity: 0;
+}
+
+.answer-item {
+  margin-bottom: 15px;
+}
+
+.answer-item:last-child {
+  margin-bottom: 0;
+}
+
+.answer-item::before {
+  content: "-";
+}
+
+#quest1:checked ~ .labels-block > label:first-child .answer-list,
+#quest2:checked ~ .labels-block > label:nth-child(2) .answer-list,
+#quest3:checked ~ .labels-block > label:nth-child(3) .answer-list,
+#quest4:checked ~ .labels-block > label:nth-child(4) .answer-list,
+#quest5:checked ~ .labels-block > label:nth-child(5) .answer-list {
+  transition: max-height 1s ease, opacity 0s ease 0.1s;
+  overflow: visible;
+  max-height: 100vh;
+  padding: 30px;
+  opacity: 1;
+}
+
+#quest1:checked ~ .labels-block > label:first-child .arrow,
+#quest2:checked ~ .labels-block > label:nth-child(2) .arrow,
+#quest3:checked ~ .labels-block > label:nth-child(3) .arrow,
+#quest4:checked ~ .labels-block > label:nth-child(4) .arrow,
+#quest5:checked ~ .labels-block > label:nth-child(5) .arrow {
+  transform: translate(0, -50%) rotate(90deg);
+}
+
+#quest1:checked ~ .labels-block > label:nth-child(2) .question-title,
+#quest2:checked ~ .labels-block > label:nth-child(3) .question-title,
+#quest3:checked ~ .labels-block > label:nth-child(4) .question-title {
+  border-radius: 20px 20px 0 0;
+}
+
+#quest4:checked ~ .labels-block > label:nth-child(5) .question-title {
+  border-radius: 20px;
+}

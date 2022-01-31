@@ -1,0 +1,174 @@
+/* Baner block */
+
+.baner {
+  background-color: rgb(160, 219, 160);
+  padding: 100px 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.gallery {
+  background-color: #0000ff;
+  margin: 0 10px;
+  position: relative;
+  padding: 15px 60px;
+}
+
+.gallery__wrapper {
+  white-space: nowrap;
+  text-align: justify;
+  position: relative;
+  padding: 10px 0;
+  /* overflow: hidden; */
+}
+
+.slide {
+  box-shadow: -5px 5px 15px #000000;
+  transform: translate(-200%, -300%);
+  transition: transform 1s ease;
+  display: inline-block;
+  position: relative;
+  height: fit-content;
+  opacity: 0;
+  width: 32%;
+}
+
+.input {
+  display: none;
+}
+
+.controls-left label,
+.controls-right label {
+  transform: translate(0, -50%);
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  height: 30px;
+  width: 30px;
+  z-index: 0;
+  top: 50%;
+}
+
+.controls-left label {
+  left: -40px;
+}
+
+.controls-right label {
+  right: -40px;
+}
+
+.controls-left label::after {
+  transform: translate(-60%, -7%);
+  content: "\2770";
+}
+
+.controls-right label::after {
+  transform: translate(-50%, -7%);
+  content: "\2771";
+}
+
+.controls-left label::after,
+.controls-right label::after {
+  position: absolute;
+  font-size: 24px;
+  color: #0000ff;
+  left: 50%;
+  top: 0;
+}
+
+/* !left checked options */
+/* Show next label */
+#left1:checked ~ .gallery__wrapper > .controls-left > label:nth-child(6),
+#left2:checked ~ .gallery__wrapper > .controls-left > label:nth-child(1),
+#left3:checked ~ .gallery__wrapper > .controls-left > label:nth-child(2),
+#left4:checked ~ .gallery__wrapper > .controls-left > label:nth-child(3),
+#left5:checked ~ .gallery__wrapper > .controls-left > label:nth-child(4),
+#left6:checked ~ .gallery__wrapper > .controls-left > label:nth-child(5) {
+  display: block;
+  z-index: 10;
+}
+
+#left1:checked ~ .gallery__wrapper > .slide1,
+#left1:checked ~ .gallery__wrapper > .slide2,
+#left1:checked ~ .gallery__wrapper > .slide3,
+#left2:checked ~ .gallery__wrapper > .slide2,
+#left2:checked ~ .gallery__wrapper > .slide3,
+#left2:checked ~ .gallery__wrapper > .slide4,
+#left3:checked ~ .gallery__wrapper > .slide3,
+#left3:checked ~ .gallery__wrapper > .slide4,
+#left3:checked ~ .gallery__wrapper > .slide5,
+#left4:checked ~ .gallery__wrapper > .slide4,
+#left4:checked ~ .gallery__wrapper > .slide5,
+#left4:checked ~ .gallery__wrapper > .slide6,
+#left5:checked ~ .gallery__wrapper > .slide5,
+#left5:checked ~ .gallery__wrapper > .slide6,
+#left5:checked ~ .gallery__wrapper > .slide1,
+#left6:checked ~ .gallery__wrapper > .slide6,
+#left6:checked ~ .gallery__wrapper > .slide1,
+#left6:checked ~ .gallery__wrapper > .slide2 {
+  transform: translate(0);
+  position: absolute;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#left1:checked ~ .gallery__wrapper > .slide1,
+#left2:checked ~ .gallery__wrapper > .slide2,
+#left3:checked ~ .gallery__wrapper > .slide3,
+#left4:checked ~ .gallery__wrapper > .slide4,
+#left5:checked ~ .gallery__wrapper > .slide5,
+#left6:checked ~ .gallery__wrapper > .slide6 {
+  left: 0;
+}
+
+#left1:checked ~ .gallery__wrapper > .slide2,
+#left2:checked ~ .gallery__wrapper > .slide3,
+#left3:checked ~ .gallery__wrapper > .slide4,
+#left4:checked ~ .gallery__wrapper > .slide5,
+#left5:checked ~ .gallery__wrapper > .slide6,
+#left6:checked ~ .gallery__wrapper > .slide1 {
+  left: 33%;
+}
+
+#left1:checked ~ .gallery__wrapper > .slide3,
+#left2:checked ~ .gallery__wrapper > .slide4,
+#left3:checked ~ .gallery__wrapper > .slide5,
+#left4:checked ~ .gallery__wrapper > .slide6,
+#left5:checked ~ .gallery__wrapper > .slide1,
+#left6:checked ~ .gallery__wrapper > .slide2 {
+  left: 66%;
+}
+
+/* !right checked options */
+#left1:checked ~ .gallery__wrapper > .controls-right > label:nth-child(2),
+#left2:checked ~ .gallery__wrapper > .controls-right > label:nth-child(3),
+#left3:checked ~ .gallery__wrapper > .controls-right > label:nth-child(4),
+#left4:checked ~ .gallery__wrapper > .controls-right > label:nth-child(5),
+#left5:checked ~ .gallery__wrapper > .controls-right > label:nth-child(6),
+#left6:checked ~ .gallery__wrapper > .controls-right > label:nth-child(1) {
+  display: block;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .controls-left label,
+  .controls-right label {
+    height: 15px;
+    width: 15px;
+  }
+
+  .controls-left label::after,
+  .controls-right label::after {
+    font-size: 14px;
+  }
+
+  .controls-right label::after {
+    transform: translate(-42%, -11%);
+  }
+
+  .controls-left label::after {
+    transform: translate(-62%, -11%);
+  }
+}

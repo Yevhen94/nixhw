@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- <link rel="stylesheet" href="./styles/baner.css" /> -->
+    <!-- <link rel="stylesheet" href="./styles/question.css" /> -->
+    <!-- <link rel="stylesheet" href="./styles/form.css" /> -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper content">
+        <div class="header-title__wrapper">
+          <div class="header__logo">
+            <a href="#" class="link">
+              <img src="./assets/images/logo.png" alt="logo" class="img" />
+            </a>
+          </div>
+          <div class="header__title">
+            <h1 class="header__title__text">WEB4YOU</h1>
+          </div>
+        </div>
+        <nav class="header__navigation">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="link">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="link">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a href="#faq" class="link">F.A.Q.</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="link">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="progress"></div>
+    <main class="main">
+      <div class="main__wrapper">
+        <div class="baner">
+          <div class="baner__wrapper content">
+            <div class="gallery">
+              <input
+                type="radio"
+                name="left-choice"
+                id="left1"
+                class="input"
+                checked
+              />
+              <input type="radio" name="left-choice" id="left2" class="input" />
+              <input type="radio" name="left-choice" id="left3" class="input" />
+              <input type="radio" name="left-choice" id="left4" class="input" />
+              <input type="radio" name="left-choice" id="left5" class="input" />
+              <input type="radio" name="left-choice" id="left6" class="input" />
+
+              <div class="gallery__wrapper">
+                <div class="slide slide1">
+                  <img
+                    src="./assets/images/baner/first.jpg"
+                    alt="first slide"
+                    class="img"
+                  />
+                </div>
+                <div class="slide slide2">
+                  <img
+                    src="./assets/images/baner/second.jpg"
+                    alt="second slide"
+                    class="img"
+                  />
+                </div>
+                <div class="slide slide3">
+                  <img
+                    src="./assets/images/baner/third.jpg"
+                    alt="third slide"
+                    class="img"
+                  />
+                </div>
+                <div class="slide slide4">
+                  <img
+                    src="./assets/images/baner/fourth.jpg"
+                    alt="fourth slide"
+                    class="img"
+                  />
+                </div>
+                <div class="slide slide5">
+                  <img
+                    src="./assets/images/baner/fifth.jpg"
+                    alt="fifth slide"
+                    class="img"
+                  />
+                </div>
+                <div class="slide slide6">
+                  <img
+                    src="./assets/images/baner/sixth.jpg"
+                    alt="sixth slide"
+                    class="img"
+                  />
+                </div>
+                <div class="controls-left">
+                  <label for="left1"></label><label for="left2"></label
+                  ><label for="left3"></label><label for="left4"></label
+                  ><label for="left5"></label><label for="left6"></label>
+                </div>
+                <div class="controls-right">
+                  <label for="left1"></label><label for="left2"></label
+                  ><label for="left3"></label><label for="left4"></label
+                  ><label for="left5"></label><label for="left6"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio content" id="portfolio">
+          <h2 class="portfolio__title">OUR WORKS</h2>
+          <div class="portfolio__content">
+            <div class="portfolio__card">
+              <div class="portfolio__card__img">
+                <img
+                  src="./assets/images/card.jpg"
+                  alt="card-item"
+                  class="img"
+                />
+              </div>
+              <p class="portfolio__card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                quo aut, totam pariatur quas mollitia quisquam minima rerum
+                animi, excepturi, officiis commodi nihil recusandae asperiores
+                neque impedit aspernatur sint tempora!
+              </p>
+              <button class="portfolio__card__button">SEE MORE</button>
+            </div>
+            <div class="portfolio__card">
+              <div class="portfolio__card__img">
+                <img
+                  src="./assets/images/card.jpg"
+                  alt="card-item"
+                  class="img"
+                />
+              </div>
+              <p class="portfolio__card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                quo aut, totam pariatur quas mollitia quisquam minima rerum
+                animi, excepturi, officiis commodi nihil recusandae asperiores
+                neque impedit aspernatur sint tempora!
+              </p>
+              <button class="portfolio__card__button">SEE MORE</button>
+            </div>
+            <div class="portfolio__card">
+              <div class="portfolio__card__img">
+                <img
+                  src="./assets/images/card.jpg"
+                  alt="card-item"
+                  class="img"
+                />
+              </div>
+              <p class="portfolio__card__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
+                quo aut, totam pariatur quas mollitia quisquam minima rerum
+                animi, excepturi, officiis commodi nihil recusandae asperiores
+                neque impedit aspernatur sint tempora!
+              </p>
+              <button class="portfolio__card__button">SEE MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="questions" id="faq">
+          <div class="questions__wrapper content">
+            <input type="radio" class="input" name="faq" id="quest1" /><input
+              type="radio"
+              class="input"
+              name="faq"
+              id="quest2"
+            /><input type="radio" class="input" name="faq" id="quest3" /><input
+              type="radio"
+              class="input"
+              name="faq"
+              id="quest4"
+            /><input type="radio" class="input" name="faq" id="quest5" />
+            <div class="labels-block">
+              <label for="quest1">
+                <h4 class="question-title">
+                  <span>Some question one</span>
+                  <span class="arrow"></span>
+                </h4>
+                <ul class="answer-list">
+                  <li class="answer-item">
+                    Some answer for question one. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Exercitationem rem tempora
+                    nostrum assumenda eaque labore quo, in aperiam repellendus
+                    omnis?
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question one. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Tempora, similique!
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question one. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Error fugiat delectus vitae
+                    dignissimos perferendis fuga.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question one. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Similique, officia ipsa.
+                  </li>
+                </ul></label
+              ><label for="quest2">
+                <h4 class="question-title">
+                  <span>Some question two</span> <span class="arrow"></span>
+                </h4>
+                <ul class="answer-list">
+                  <li class="answer-item">
+                    Some answer for question two. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question two. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quae atque laborum soluta!
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question two. Lorem ipsum dolor sit amet
+                    consectetur.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question two. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dignissimos nostrum
+                    voluptatibus laboriosam ratione?
+                  </li>
+                </ul></label
+              ><label for="quest3">
+                <h4 class="question-title">
+                  <span>Some question three</span> <span class="arrow"></span>
+                </h4>
+                <ul class="answer-list">
+                  <li class="answer-item">
+                    Some answer for question three. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Sit doloremque placeat
+                    corporis.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question three. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Esse provident temporibus
+                    consequatur eveniet error vel.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question three. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Consequuntur, odit quas.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question three. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. A!
+                  </li>
+                </ul></label
+              ><label for="quest4">
+                <h4 class="question-title">
+                  <span>Some question four</span> <span class="arrow"></span>
+                </h4>
+                <ul class="answer-list">
+                  <li class="answer-item">
+                    Some answer for question four. Lorem ipsum dolor sit.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question four. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Quo est beatae error!
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question four. Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Debitis eaque molestiae quos.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question four. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolorum maiores molestiae
+                    facere veniam autem!
+                  </li>
+                </ul></label
+              ><label for="quest5">
+                <h4 class="question-title">
+                  <span>Some question five</span> <span class="arrow"></span>
+                </h4>
+                <ul class="answer-list">
+                  <li class="answer-item">
+                    Some answer for question five. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Voluptatum, quo! Beatae, ea?
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question five. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Accusamus, necessitatibus
+                    eveniet.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question five. Lorem ipsum dolor sit amet
+                    consectetur adipisicing.
+                  </li>
+                  <li class="answer-item">
+                    Some answer for question five. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                  </li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="contacts" id="contacts">
+          <div class="contacts__wrapper content">
+            <form action="#" class="form">
+              <!-- Text fields inputs -->
+              <label class="form-field">
+                <span>Enter your first name</span>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstname"
+                  placeholder="Enter your first name"
+                  class="input-form"
+                  pattern="[A-Za-zА-Яа-яЁё]{2,}"
+                  required
+              /></label>
+              <label class="form-field">
+                <span>Enter your last name</span>
+
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastname"
+                  placeholder="Enter your last name"
+                  class="input-form"
+                  pattern="[A-Za-zА-Яа-яЁё]{2,}"
+                  required
+              /></label>
+              <label class="form-field">
+                <span>Enter your e-mail</span>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  placeholder="Enter your email"
+                  pattern="[A-Za-z]{5,}[0-9]{2,}@[a-z]{3,}.[a-z]{2,}"
+                  class="input-form"
+                  required
+              /></label>
+              <label class="form-field">
+                <span>Enter your phone number</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  id="phone"
+                  placeholder="(XXX-XXX-XX-XX)"
+                  class="input-form"
+                  required
+              /></label>
+              <!-- Radio buttons block for choice city -->
+              <fieldset>
+                <legend>Choice your city</legend>
+                <label class="form-radio"
+                  ><input type="radio" name="city" id="city1" />
+                  <span>Kyiv</span>
+                </label>
+                <label class="form-radio"
+                  ><input type="radio" name="city" id="city2" />
+                  <span>Kharkiv</span>
+                </label>
+                <label class="form-radio"
+                  ><input type="radio" name="city" id="city3" />
+                  <span>Lviv</span>
+                </label>
+                <label class="form-radio"
+                  ><input type="radio" name="city" id="city4" />
+                  <span>Odessa</span>
+                </label>
+              </fieldset>
+              <!-- Buttons block -->
+              <div class="form-buttons">
+                <div class="form-buttons__reset">
+                  <input class="input-btn" type="reset" value="RESET" />
+                </div>
+                <div class="form-buttons__submit">
+                  <input class="input-btn" type="submit" value="SUBMIT" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper content">
+        <div class="footer__logo">
+          <img src="./assets/images/logo.png" alt="logo" class="img" />
+        </div>
+        <span class="footer__copy">&copy;</span
+        ><span class="footer__copy">2021</span
+        ><span class="footer__copy">Made by SevenBrother Studio</span>
+        <span class="footer__copy">| All rights reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>
