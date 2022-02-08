@@ -1,0 +1,28 @@
+.first-ex {
+  grid-template-columns: repeat(3, 1fr);
+
+  display: grid;
+  gap: 10px;
+}
+
+.block {
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.block--yellow {
+  background-color: yellow;
+  justify-self: end;
+}
+
+.block--pink {
+  background-color: pink;
+}
+
+.block--green {
+  background-color: lightgreen;
+}
+
+.block--blue {
+  background-color: lightblue;
+}

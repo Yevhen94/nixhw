@@ -1,0 +1,79 @@
+.first-ex {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 10px;
+}
+
+.block {
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  font-weight: bold;
+  min-width: 150px;
+  font-size: 30px;
+  display: flex;
+}
+
+.block--yellow {
+  background-color: yellow;
+  justify-self: end;
+}
+
+.block--pink {
+  background-color: pink;
+  justify-self: start;
+}
+
+.block--green {
+  background-color: lightgreen;
+  justify-self: center;
+}
+
+.block--blue {
+  background-color: lightblue;
+}
+
+.second-ex {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: grid;
+  gap: 10px;
+}
+
+.resp-block {
+  background-color: lightgrey;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 20px;
+  display: flex;
+}
+
+.two-in-one {
+  grid-column: 1 / span 2;
+}
+
+.four-in-one {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.three-in-one {
+  grid-column-end: span 3;
+}
+
+.third-ex {
+  grid-template-columns: repeat(2, 50%);
+  display: grid;
+}
+
+.item {
+  background-color: grey;
+}
+
+.subgrid {
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  display: grid;
+}

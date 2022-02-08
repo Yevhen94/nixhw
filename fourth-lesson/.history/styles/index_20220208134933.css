@@ -1,0 +1,16 @@
+.block {
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.block--yellow {
+  background-color: yellow;
+}
+
+.block--pink {
+  background-color: pink;
+}
+
+.block--green {
+  background-color: lightgreen;
+}
