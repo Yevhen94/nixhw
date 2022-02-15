@@ -1,0 +1,49 @@
+.main {
+  &__wrapper {
+    background-color: $c-mainBG;
+  }
+  &__info-block__item {
+    background-color: $c-white;
+
+    & .info {
+      width: 90%;
+
+      &__title {
+        font-size: em(12);
+      }
+
+      &__content {
+        font-size: em(18);
+      }
+
+      & .progress {
+        height: 0.5rem;
+      }
+    }
+
+    & .info-icon {
+      width: 10%;
+    }
+
+    & i::before {
+      color: $c-greyIcon;
+      vertical-align: 0;
+      font-size: em(24);
+    }
+  }
+  &__todo-list {
+    box-shadow: $bsh-lite;
+    & label {
+      cursor: pointer;
+      width: 100%;
+
+      & h5 {
+        font-size: em(14);
+      }
+
+      & span {
+        font-size: em(12);
+      }
+    }
+  }
+}

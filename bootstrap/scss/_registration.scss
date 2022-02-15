@@ -1,0 +1,44 @@
+.reg-image img {
+  border-radius: 10px 0 0 10px;
+}
+
+.reg-form {
+  border-radius: 0 10px 10px 0;
+  background-color: $c-white;
+
+  @media (max-width: 767px) {
+    border-radius: 10px;
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+[class*="col"] {
+  padding: 0;
+}
+
+.border-radius {
+  border-radius: 35px;
+}
+
+.btn-darkblue {
+  background-color: $c-darkBlue;
+  border-color: $c-darkBlue;
+  color: $c-white;
+
+  &:hover {
+    background-color: $c-darkBlue;
+    border-color: $c-darkBlue;
+    color: $c-white;
+  }
+}
+
+.form-control {
+  height: auto;
+}
+
+.link {
+  text-decoration: underline;
+}

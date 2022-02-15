@@ -1,0 +1,31 @@
+.main {
+  & .user-block {
+    & .avatar-block {
+      background-color: $c-white;
+    }
+    & .img {
+      border-radius: 50%;
+    }
+
+    &__skills {
+      & .progress {
+        height: 0.5rem;
+      }
+    }
+  }
+}
+
+.user-form,
+.contacts-form {
+  background-color: $c-white;
+}
+
+.box-shadow {
+  box-shadow: $bsh-lite;
+}
+
+.underline {
+  background-color: $c-greyLight;
+  border: none;
+  height: 3px;
+}

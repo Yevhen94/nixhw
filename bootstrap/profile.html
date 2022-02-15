@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <div class="wrappers row">
+      <nav
+        class="navbar justify-content-start flex-column col-md-3 navbar-dark navbar-expand-md p-0"
+      >
+        <button
+          class="navbar-toggler p-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="fixed-top bg-primary collapse navbar-collapse align-items-start flex-column pr-5 pl-2 pt-2"
+          id="navbarNav"
+        >
+          <button
+            type="button"
+            class="close-nav d-md-none p-0"
+            aria-label="Close"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="logo" class="img" />
+          </a>
+          <ul class="navbar-nav flex-column mt-3 pl-3">
+            <li class="nav-item active">
+              <a
+                class="nav-link font-weight-bold d-flex align-items-center"
+                href="./index.html"
+                ><i class="bi bi-speedometer2"></i>
+                <span class="ml-1">Goals</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold d-flex align-items-center"
+                href="#"
+              >
+                <i class="bi bi-person"></i>
+                <span class="ml-1">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold d-flex align-items-center"
+                href="./registration.html"
+                ><i class="bi bi-person-circle"></i>
+                <span class="ml-1">Register</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content col-md-9">
+        <!-- !header block -->
+        <header class="header">
+          <div
+            class="header__buttons p-3 d-flex align-items-center justify-content-end"
+          >
+            <div class="header__search d-flex align-items-stretch">
+              <input
+                type="text"
+                name="search"
+                id="js-search"
+                class="header__search__input"
+                placeholder="Search for..."
+              />
+              <button
+                class="btn btn-primary header__search__btn d-flex align-items-center justify-content-center"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <div class="header__notify d-flex justify-content-center">
+              <span class="badge badge-danger">3+</span>
+              <i class="bi bi-bell-fill"></i>
+            </div>
+            <div class="header__messages d-flex justify-content-center">
+              <span class="badge badge-danger">7</span>
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div
+              class="header__user d-flex align-items-center justify-content-between pl-2"
+            >
+              <span class="header__user__text mr-2 d-none d-md-block"
+                >Nix Student</span
+              >
+              <div class="header__user__photo">
+                <img src="./assets/images/user.jpg" alt="avatar" class="img" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- !Main content -->
+        <main class="main">
+          <div class="main__wrapper p-3">
+            <div class="main__title">
+              <h2 class="title text-dark mb-0">Profile</h2>
+            </div>
+            <div class="main__content row justify-content-between mt-4">
+              <div class="user-block col-md-4">
+                <div class="user-block__wrapper d-flex flex-column pr-md-3">
+                  <div
+                    class="avatar-block d-flex flex-column align-items-center p-4 mb-3 box-shadow rounded"
+                  >
+                    <div class="avatar-block__img mb-3 pt-2">
+                      <img
+                        src="./assets/images/user.jpg"
+                        alt="avatar-user"
+                        class="img"
+                      />
+                    </div>
+                    <button type="button" class="btn btn-primary mb-2">
+                      Change photo
+                    </button>
+                  </div>
+                  <div class="user-block__skills box-shadow mb-3 mb-md-0">
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item text-primary bg-light font-weight-bold"
+                      >
+                        Homeworks
+                      </li>
+                      <li class="list-group-item border-bottom-0 pb-0">
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Bootstrap</span><span>20%</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar bg-danger"
+                            role="progressbar"
+                            style="width: 20%"
+                            aria-valuenow="20"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-bottom-0 pb-0">
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>SASS/SCSS</span><span>40%</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar bg-warning"
+                            role="progressbar"
+                            style="width: 40%"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-bottom-0 pb-0">
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Grid+Flex</span><span>60%</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 60%"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-bottom-0 pb-0">
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>Pseudoclasses</span><span>80%</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar bg-info"
+                            role="progressbar"
+                            style="width: 80%"
+                            aria-valuenow="80"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                      <li class="list-group-item pb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                          <span>HTML+CSS</span><span>Complete!</span>
+                        </div>
+                        <div class="progress mb-3">
+                          <div
+                            class="progress-bar bg-success"
+                            role="progressbar"
+                            style="width: 100%"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="settings-block col-md-8">
+                <div class="user-form mb-3 rounded box-shadow">
+                  <h6
+                    class="user-form__title text-primary mb-0 pt-3 pb-3 pr-4 pl-3 bg-light rounded-top"
+                  >
+                    User Settings
+                  </h6>
+                  <form class="p-3 pb-4">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label
+                          for="userName"
+                          class="font-weight-bold text-muted"
+                          >Username</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-0"
+                          id="userName"
+                          placeholder="username"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="email" class="font-weight-bold text-muted"
+                          >Email Address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control mb-0"
+                          id="email"
+                          placeholder="user@example.com"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label
+                          for="firstName"
+                          class="font-weight-bold text-muted"
+                          >First Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-0"
+                          id="firstName"
+                          placeholder="John"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label
+                          for="lastName"
+                          class="font-weight-bold text-muted"
+                          >Last Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-0"
+                          id="lastName"
+                          placeholder="Doe"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">
+                      Save Settings
+                    </button>
+                  </form>
+                </div>
+                <div class="contacts-form rounded box-shadow">
+                  <h6
+                    class="contacts-form__title text-primary mb-0 pt-3 pb-3 pr-4 pl-3 bg-light rounded-top"
+                  >
+                    Contacts Settings
+                  </h6>
+                  <form class="p-3 pb-4">
+                    <div class="form-group">
+                      <label
+                        for="inputAddress"
+                        class="font-weight-bold text-muted"
+                        >Address</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control mb-0"
+                        id="address"
+                        placeholder="Sunset Blvd, 38"
+                      />
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="city" class="font-weight-bold text-muted"
+                          >City</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-0"
+                          id="city"
+                          placeholder="Los Angeles"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="country" class="font-weight-bold text-muted"
+                          >Country</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mb-0"
+                          id="country"
+                          placeholder="USA"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">
+                      Save Settings
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <hr class="underline rounded" />
+          </div>
+        </main>
+        <!-- !footer block -->
+        <footer class="footer p-3">
+          <div class="footer__wrapper d-flex justify-content-center">
+            <span class="footer__text">Copyright</span>
+            <span class="footer__copy">&nbsp;&copy;&nbsp;</span>
+            <span class="footer__text">Nix Student 2022</span>
+          </div>
+          <a
+            id="scrollBtn"
+            href="#"
+            class="btn btn-secondary back-to-top"
+            role="button"
+            ><i class="fas fa-chevron-up"></i
+          ></a>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/f7935cd2ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+.header {
+  box-shadow: $bsh-base;
+  position: relative;
+
+  &__buttons {
+    & .bi {
+      @include size(18);
+      display: block;
+
+      &::before {
+        color: $c-greyIcon;
+        vertical-align: 0;
+      }
+    }
+  }
+
+  &__search {
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+    &__input {
+      @media (max-width: 767px) {
+        padding: 0;
+        width: 0 !important;
+      }
+      background-color: $c-searchBG;
+      padding-left: 10px;
+      flex-basis: 90%;
+      outline: none;
+      border: none;
+    }
+
+    &__btn {
+      border-radius: 0 0.25rem 0.25rem 0;
+
+      @media (max-width: 767px) {
+        background-color: transparent;
+        border-radius: 5px;
+        border: none;
+      }
+      flex-basis: 10%;
+      & .bi-search {
+        @include size(18);
+
+        &::before {
+          vertical-align: 0;
+          color: $c-white;
+          @media (max-width: 767px) {
+            color: $c-greyIcon;
+          }
+        }
+      }
+      &:hover .bi-search::before {
+        @media (max-width: 767px) {
+          color: $c-white;
+        }
+      }
+    }
+  }
+
+  &__notify,
+  &__messages {
+    position: relative;
+    padding: 0 15px;
+    & .badge {
+      transform: translate(50%, -50%);
+      position: absolute;
+      font-size: em(8);
+      top: 0;
+    }
+  }
+
+  &__user {
+    border-left: 1px solid $c-grey;
+    @media (max-width: 767px) {
+      border-left: none;
+    }
+
+    &__text {
+      white-space: nowrap;
+    }
+    &__photo {
+      @include size(40);
+    }
+    & .img {
+      border-radius: 50%;
+    }
+  }
+}
+
+.navbar {
+  @media (max-width: 767px) {
+    position: absolute;
+    z-index: 100;
+    width: auto;
+    left: 20px;
+    top: 20px;
+  }
+
+  &-nav {
+    width: 100%;
+  }
+}
+
+.navbar-collapse {
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    position: static;
+    width: 100%;
+  }
+}
+
+.fixed-top {
+  right: auto;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 0, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.close-nav {
+  background-color: transparent;
+  position: absolute;
+  font-size: 2rem;
+  outline: none;
+  color: $c-white;
+  border: none;
+  right: 5px;
+  top: -8px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+i {
+  font-family: fontawesome !important;
+  font-style: normal;
+}
+
+.footer {
+  font-size: em(12);
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  opacity: 0.5;
+  bottom: 10px;
+  right: 10px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.popover-close {
+  max-width: fit-content;
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  top: 5px;
+
+  & .bi {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  & .bi::before {
+    vertical-align: 0;
+  }
+}

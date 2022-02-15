@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <div class="wrappers row">
+      <nav
+        class="navbar justify-content-start flex-column col-md-3 navbar-dark navbar-expand-md p-0"
+      >
+        <button
+          class="navbar-toggler p-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="fixed-top bg-primary collapse navbar-collapse align-items-start flex-column pr-5 pl-2 pt-2"
+          id="navbarNav"
+        >
+          <button
+            type="button"
+            class="close-nav d-md-none p-0"
+            aria-label="Close"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="logo" class="img" />
+          </a>
+          <ul class="navbar-nav flex-column mt-3 pl-3">
+            <li class="nav-item active">
+              <a
+                class="nav-link font-weight-bold d-flex align-items-center"
+                href="#"
+                ><i class="bi bi-speedometer2"></i>
+                <span class="ml-1">Goals</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold d-flex align-items-center"
+                href="./profile.html"
+              >
+                <i class="bi bi-person"></i>
+                <span class="ml-1">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold d-flex align-items-center"
+                href="./registration.html"
+                ><i class="bi bi-person-circle"></i>
+                <span class="ml-1">Register</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content col-md-9">
+        <!-- !header block -->
+        <header class="header">
+          <div
+            class="header__buttons p-3 d-flex align-items-center justify-content-end"
+          >
+            <div class="header__search d-flex align-items-stretch">
+              <input
+                type="text"
+                name="search"
+                id="js-search"
+                class="header__search__input"
+                placeholder="Search for..."
+              />
+              <button
+                class="btn btn-primary header__search__btn d-flex align-items-center justify-content-center"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <div class="header__notify d-flex justify-content-center">
+              <span class="badge badge-danger">3+</span>
+              <i class="bi bi-bell-fill"></i>
+            </div>
+            <div class="header__messages d-flex justify-content-center">
+              <span class="badge badge-danger">7</span>
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div
+              class="header__user d-flex align-items-center justify-content-between pl-2"
+            >
+              <span class="header__user__text mr-2 d-none d-md-block"
+                >Nix Student</span
+              >
+              <div class="header__user__photo">
+                <img src="./assets/images/user.jpg" alt="avatar" class="img" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- !Main content -->
+        <main class="main">
+          <div class="main__wrapper p-3">
+            <div class="main__title d-flex justify-content-between">
+              <h2 class="title text-dark">Goals</h2>
+              <!-- !POPPER IS HERE ONLY FOR DESCTOP VERSION -->
+              <button
+                class="btn btn-primary d-none d-md-flex align-items-center justify-content-center"
+                data-toggle="popover"
+                data-trigger="manual"
+                title="Generate report"
+                data-content="Generate report about this user now!"
+              >
+                <i class="bi bi-download"></i>
+                <span class="ml-2">Generate Report</span>
+              </button>
+            </div>
+            <div class="main__info-block row justify-content-between mt-4">
+              <div
+                class="main__info-block__item rounded col-md-5 mb-4 pt-3 pl-2 pb-3 pr-2 d-flex justify-content-between align-items-center"
+              >
+                <div class="info">
+                  <h6 class="info__title text-primary">EARNINGS (MONTHLY)</h6>
+                  <span class="info__content font-weight-bold">$40,000</span>
+                </div>
+                <i class="bi bi-calendar-fill"></i>
+              </div>
+              <div
+                class="main__info-block__item rounded col-md-5 mb-4 pt-3 pl-2 pb-3 pr-2 d-flex justify-content-between align-items-center"
+              >
+                <div class="info">
+                  <h6 class="info__title text-success">EARNINGS (ANNUAL)</h6>
+                  <span class="info__content font-weight-bold">$215,000</span>
+                </div>
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+              <div
+                class="main__info-block__item rounded col-md-5 mb-4 mb-md-0 pt-3 pl-2 pb-3 pr-2 d-flex justify-content-between align-items-center"
+              >
+                <div class="info">
+                  <h6 class="info__title text-info">TASKS</h6>
+                  <div class="info__wrapper d-flex align-items-center">
+                    <span class="info__content font-weight-bold">50%</span>
+                    <div class="progress ml-2 mr-2 w-100">
+                      <div
+                        class="progress-bar w-50"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="info-icon d-flex justify-content-end align-items-center"
+                >
+                  <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+              </div>
+              <div
+                class="main__info-block__item rounded col-md-5 pt-3 pl-2 pb-3 pr-2 d-flex justify-content-between align-items-center"
+              >
+                <div class="info">
+                  <h6 class="info__title text-warning">PENDING REQUESTS</h6>
+                  <span class="info__content font-weight-bold">18</span>
+                </div>
+                <div
+                  class="info-icon d-flex justify-content-end align-items-center"
+                >
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="main__todo-list mb-3">
+              <ul class="list-group">
+                <li
+                  class="list-group-item text-primary font-weight-bold bg-light"
+                >
+                  Todo List
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <label class="mb-0" for="todo-first">
+                    <h5 class="todo-title mb-0">Lunch meeting</h5>
+                    <span>10:30 AM</span>
+                  </label>
+                  <input type="checkbox" name="todo" id="todo-first" />
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <label class="mb-0" for="todo-second">
+                    <h5 class="todo-title mb-0">Lunch meeting</h5>
+                    <span>11:30 AM</span>
+                  </label>
+                  <input type="checkbox" name="todo" id="todo-second" />
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  <label class="mb-0" for="todo-third">
+                    <h5 class="todo-title mb-0">Lunch meeting</h5>
+                    <span>12:30 AM</span>
+                  </label>
+                  <input type="checkbox" name="todo" id="todo-third" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+        <!-- !footer block -->
+        <footer class="footer p-3">
+          <div class="footer__wrapper d-flex justify-content-center">
+            <span class="footer__text">Copyright</span>
+            <span class="footer__copy">&nbsp;&copy;&nbsp;</span>
+            <span class="footer__text">Nix Student 2022</span>
+          </div>
+          <a
+            id="scrollBtn"
+            href="#"
+            class="btn btn-secondary back-to-top"
+            role="button"
+            ><i class="fas fa-chevron-up"></i
+          ></a>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/f7935cd2ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
